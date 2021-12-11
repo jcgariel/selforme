@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+
+:root {
+    /* Couleurs */
+    --arr-plan: #F0F0F0;
+    --clr1: linear-gradient(90deg, #EC7D53 0%, #E97287 100%);  
+    --clr2: linear-gradient(90deg, #415970 0%, #5E5768 100%);
+    --clr-form-maintenance: linear-gradient(90deg, #1F519C 0%, #2895B7 100%);
+    --clr-form-commerce: linear-gradient(90deg, #64B6AC 0%, #6494B6 100%);
+    --clr-form-metiers: linear-gradient(90deg, #714481 0%, #7C2F2F 100%);
+    --clr-form-courtes: linear-gradient(90deg, #54912F 0%, #3B8D8D 100%);
+
+    /* Ombres */
+    --shad-ext: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --shad-inner-card: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+    --shad-title-card: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    --shad-formation-card: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --shad-cta-button-color: 0px 4px 8px 4px rgba(247, 129, 84, 0.25);
+    --shad-formation-categorie: inset 4px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.flex {
+    display: flex;
+}
+
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexcx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+body {
+    background-color: var(--arr-plan);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: geometricPrecision;
+}
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFF;
+}
+
+nav a:not(:last-child) {
+    margin-right: 5vw;
+}
+
+nav img {
+    max-height: 20px;
+    width: 20px;
+    margin-right: 7px;
+}
+
+main {
+    padding: 0 90px;
+}
+
+main section {
+    margin-top: 90px;
+}
+
+main h1 + section {
+    margin-top: 40px;
+}
+
+h1 {
+    color: #000;
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.title-ext {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.title-ext h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #000;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+@media (max-width: 967px) {
+
+    main {
+        padding: 0 30px;
+    }
+
+    main section {
+        margin-top: 50px;
+    }
+
+    h1 {
+        /* font-size: 30px; */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+}

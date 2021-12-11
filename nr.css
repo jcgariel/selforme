@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header {
+    background: var(--clr1);
+    box-shadow: var(--shad-ext);
+    border-radius: 0px 0px 20px 20px;
+    padding: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a.logo img {
+    max-height: 160px;
+}
+
+header nav {
+    padding-top: 35px;
+}
+
+@media (max-width: 967px) {
+
+    header a.logo img {
+        max-height: 35px;
+    }
+
+    header {
+        padding: 20px 10px 15px 10px;
+    }
+
+    header nav {
+        padding-top: 20px;
+    }
+
+    header nav a {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.7em;
+        text-align: center;
+        font-weight: 900;
+        width: min-content;
+    }
+
+    /* Accès plateforme -> Plateforme */
+    header nav a[target="_blank"] {
+        color: rgba(0, 0, 0, 0);
+        word-spacing: 100vw; /* Force line break after each word (with width min-content) */
+    }
+    header nav a[target="_blank"]::after {
+        content: "Plateforme";
+        color: #FFF;
+        margin-top: -2.9em;
+    }
+
+    header nav a img {
+        margin: 0 0 3px 0;
+        max-height: 17px;
+    }
+}
